@@ -1,0 +1,221 @@
+/* Campbellized's stylesheet 
+
+
+Detail Color: #454545
+Accent Color: #8CD674
+
+
+
+
+
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Cousine:400);
+@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700);
+
+html {
+	font-family: 'Muli', sans-serif;
+	font-size:18px;
+}
+.logo a, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cabin', sans-serif;
+}
+p, a{
+	font-weight:300;
+}
+pre{
+
+}
+code{
+	font-family: 'Cousine', monospace;
+	color:#454545;
+	font-size:85%;
+}
+strong{
+	font-weight:600;
+}
+img {
+	border:2px solid #454545;
+}
+input, select, textarea {
+	border:1px solid #AEAEAE;
+}
+.button, input[type="submit"] {
+	background:#fff;
+	border:1px solid #454545;
+	vertical-align:middle;
+}
+.button.flat {
+
+}
+.button.alt, input[type=submit].alt {
+	color: #fff;
+	border-color: #fff;
+	background-color: transparent;
+}
+.button:hover, input[type=submit]:hover {
+	background:#454545;
+	color:#fff;
+	border:1px solid #454545;
+}
+.button.alt:hover, input[type=submit].alt:hover {
+	color: #454545;
+	background-color: #fff;
+}
+label.required:after {
+	color:#FB6641;
+}
+.fa-inverse{
+	color:#A2F686;
+	background-color:#454545;
+}
+#header {
+	background: #454545; 
+	min-height:80px;
+}
+#header .logo a, #footer .logo a {
+	font-size:2em;
+	color: #fff;
+	font-weight: 700;
+}
+#header .nav li a{
+	font-size: 21px;
+	font-size: 1.167rem;
+	background:#454545;
+	color:#fff;
+	margin-left:7px;
+	border: none;
+	padding: 8px;
+}
+#header .nav li a:hover, #header .nav li a.active {
+	background-color:#fff;
+	color:#454545;
+}
+.message-box{
+	background: #efefef;
+	border:1px solid #dedede;
+	padding:18px;
+	padding:1rem;
+}
+.banner{
+	background: #8CD674;
+}
+.hero .section {
+	width:70%;
+	margin-bottom: 0;
+}
+.hero .section h2 {
+	font-size:54px;
+	font-size:3rem;
+	text-transform:uppercase;
+}
+.hero .section p {
+	font-size:32px;
+	font-size:1.778em;
+}
+.hero {
+	height:300px;
+	color: #fff;
+    background-image: url("../imgs/trees_web.jpg");
+}
+.landing .hero {
+	height:500px;
+}
+.hero .valign{
+	height:100%;
+	width:100%;
+}
+.splash-bg > .valign {
+	width:100%;
+	height:100vh;
+}
+.hero .banner {
+	height:10px;
+	position:absolute;
+	bottom:0;
+	opacity: 0.75;
+}
+.hero .banner:first-child {
+	top: 0;
+}
+.splash-bg{
+	color: #fff;
+    background-image: url("../imgs/trees_web.jpg");
+}
+.splash-bg .valign > div > .section {
+	margin: 5em auto;
+	background-color:#fff;
+	color:#454545;
+}
+#footer{
+	background: #454545; 
+	color: #fff;
+}
+.style1 {
+	background: #8CD674;
+	color: #fff;
+}
+.style1 .image img{
+	border:2px solid #fff;
+}
+.content .icon.featured {
+	margin:36px auto;
+	margin:1.5rem auto;
+	display: block;
+}
+.content .icon.featured [class*='fa-'], .content:hover .icon.featured [class*='fa-'] {
+	transition: all 0.3s ease-out 0s;
+}
+.content .icon.featured [class*='fa-'] {
+    border-radius: 0.222em;
+    padding: 0.292em;
+    -webkit-transform:scale(0.85) rotate(0deg);
+	-moz-transform:scale(0.85) rotate(0deg);
+	-o-transform:scale(0.85) rotate(0deg);
+	-ms-transform:scale(0.85) rotate(0deg);
+	transform:scale(0.85) rotate(0deg)	
+}
+.content:hover .icon.featured [class*='fa-']{
+	-webkit-transform:scale(1) rotate(0deg);
+	-moz-transform:scale(1) rotate(0deg);
+	-o-transform:scale(1) rotate(0deg);
+	-ms-transform:scale(1) rotate(0deg);
+	transform:scale(1) rotate(0deg)
+}
+
+.copyright {
+	font-weight:300;
+	font-size:12px !important;
+	font-size:0.667rem !important;
+}
+#footer li a:hover {
+	color: #A2F686;
+}
+/* Just Responsive Things <3 */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+	#header #mobi-menu{
+		background-color:#404040;
+	}
+	#header .nav .links li a {
+		background-color:#404040;	
+	}
+	#header .nav .links li a.active, #header .nav .links li a:hover {
+		background-color:#fff;
+	}
+	.hero .section {
+		width:100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.hero .section {
+		width:100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

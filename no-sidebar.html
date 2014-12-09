@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Origin Responsive Template
+    Copyright (C) 2014 Chris Campbell
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+    USA
+-->
+<html>
+	<head>
+		<title>Origin | HTML5 template by campbellized</title>
+		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">		
+		<link rel="stylesheet" href="css/style.css" />
+		
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/framework.js"></script>
+	</head>
+	
+	<body class="no-sidebar">
+		<div id="header">
+				<div class="container">
+					<div class="nav">
+						<div  class="logo">
+							<a href="#">ORIGIN</a>
+							<a id="mobi-menu" href="index.html"><i class="fa fa-bars"></i></a>
+						</div>
+						<div class="links">
+							<ul>
+								<li><a class="button flat" href="index.html">Landing</a></li>
+								<li><a class="button flat" href="right-sidebar.html">Right Sidebar</a></li>
+								<li><a class="button flat active" href="no-sidebar.html">No Sidebar</a></li>
+								<li><a class="button flat" href="splash.html">Splash</a></li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>						
+		<div id="main">
+			<div class="hero">
+				<div class="banner"></div>
+					<div class="valign">
+						<div>
+							<div class="container section centered">
+								<h2>No Sidebar</h2>
+							</div>
+						</div>
+						<div class="overlay"></div>									
+					</div>
+				<div class="banner"></div>
+			</div>
+			<div class="container">
+				<h1>Let's check out the grid system.</h1>
+				<p>The grid system has one-whole, one-half, one-third, one-fourth, one-eighth, two-third, and three-fourth increments. It has a less sub-divisions than other grid systems, but I like to keep it simple.</p>
+				<p><strong>These grids make use of the optional <code>.no-gutters</code> class, meaning their columns will have no spacing between them.</strong></p>				
+				<style>.grid.demosite, .grid.demosite [class*='col-']{border:1px solid #dedede} .grid.demosite + .grid.demosite [class*='col-']{border-top:none} .grid.demosite + .grid.demosite {border-top:none}</style>
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-1"><p>Column</p></div>
+				</div>
+				<span></span>
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-2"><p>Half column</p></div>
+					<div class="centered col-1-2"><p>Half column</p></div>
+				</div>
+				<span></span>
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-3"><p>Third column</p></div>
+					<div class="centered col-1-3"><p>Third column</p></div>
+					<div class="centered col-1-3"><p>Third column</p></div>
+				</div>
+				<span></span>										
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-3"><p>Third column</p></div>
+					<div class="centered col-2-3"><p>Two-thirds column</p></div>
+				</div>
+				<span></span>										
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-4"><p>Fourth column</p></div>
+					<div class="centered col-1-4"><p>Fourth column</p></div>
+					<div class="centered col-1-4"><p>Fourth column</p></div>
+					<div class="centered col-1-4"><p>Fourth column</p></div>
+				</div>
+				<span></span>										
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-4"><p>Fourth column</p></div>
+					<div class="centered col-3-4"><p>Three-fourths column</p></div>
+				</div>
+				<span></span>										
+				<div class="grid no-gutters demosite">
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+					<div class="centered col-1-8"><p>Column</p></div>
+				</div>
+				<div class="message-box">
+					<pre><code>&lt;div class="grid no-gutters"&gt;<br>&emsp;&lt;div class="centered col-1-4"&gt;&lt;p&gt;Fourth column&lt;/p&gt;&lt;/div&gt;<br>&emsp;&lt;div class="centered col-3-4"&gt;&lt;p&gt;Three-fourths column&lt;/p&gt;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+				</div>
+				<hr></hr>
+				<p><strong>There are helper classes that enable the columns to be pushed to the right. This column uses a <code>.push-3-4</code> class to push it 75% to the left.</strong></p>
+				<div class="grid no-gutters demosite">
+					<div class="centered push-3-4 col-1-4"><p>Fourth column</p></div>
+				</div>				
+				<div class="message-box">
+					<pre><code>&lt;div class="grid no-gutters"&gt;<br>&emsp;&lt;div class="centered push-3-4 col-1-4"&gt;&lt;p&gt;Fourth column&lt;/p&gt;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+				</div>				
+				<div class="section style1">
+					<div class="grid no-gutters demosite">
+						<div class="centered col-1-2"><p>Half column</p></div>
+						<div class="centered col-1-2"><p>Half column</p></div>
+					</div>
+					<div class="grid no-gutters demosite">
+						<div class="centered col-1-4"><p>Fourth column</p></div>
+						<div class="centered col-1-4"><p>Fourth column</p></div>
+						<div class="centered col-1-4"><p>Fourth column</p></div>
+						<div class="centered col-1-4"><p>Fourth column</p></div>
+					</div>
+					<p><strong>In this grid system there columns but no rows. The grid <i>is</i> the row. (Whoa dude)</strong></p>
+					<div class="message-box">
+						<pre><code>&lt;div class="grid no-gutters"&gt;<br>&emsp;&lt;div class="centered col-1-2"&gt;&lt;p&gt;Half column&lt;/p&gt;&lt;/div&gt;<br>&emsp;&lt;div class="centered col-1-2"&gt;&lt;p&gt;Half column&lt;/p&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class="grid no-gutters"&gt;<br>&emsp;&lt;div class="centered col-1-4"&gt;&lt;p&gt;Fourth column&lt;/p&gt;&lt;/div&gt;<br>&emsp;&lt;div class="centered col-1-4"&gt;&lt;p&gt;Fourth column&lt;/p&gt;&lt;/div&gt;<br>&emsp;&lt;div class="centered col-1-4"&gt;&lt;p&gt;Fourth column&lt;/p&gt;&lt;/div&gt;<br>&emsp;&lt;div class="centered col-1-4"&gt;&lt;p&gt;Fourth column&lt;/p&gt;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+					</div>
+				</div>
+			</div>
+		<div class="banner featured centered"><p>Hey this is a content area too. Sweet!</p></div>				
+		</div>				
+		<div id="footer">
+			<div class="container">
+				<div class="grid">
+					<div class="col-1-3 mob-1-1">
+						<div class="content">
+							<div  class="logo">
+								<a href="#">ORIGIN</a>
+							</div>						
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="content">
+							<h3>Site Map</h3>
+							<ul class="nav">
+								<li><a href="index.html">Landing</a></li>
+								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li><a href="right-sidebar.html">Right Sidebar</a></li>
+								<li><a href="no-sidebar.html">No Sidebar</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="content">
+							<h3>Social</h3>
+							<ul class="social">
+								<li><a class="fb" href="#">Facebook</a></li>
+								<li><a class="twitter" href="#">Twitter</a></li>
+								<li><a class="youtube" href="#">YouTube</a></li>
+								<li><a class="gplus" href="#">Google+</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="copyright centered">&copy; 20XX - Company Name </p>
+			</div>
+		</div>
+	</body>
+</html>
